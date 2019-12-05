@@ -14,7 +14,7 @@
   outline: 0;
 }
 body {
-  background-image: url('images/grid2.png');
+  /*background-image: url('images/grid2.png');*/
   position: absolute;
   left: 0;
   top: 0;
@@ -247,10 +247,7 @@ a
 	border-radius: 24px;
 	border-style: solid;
 	border-color: #FAA41A;
-
 }
-
-
 @media(max-width:650px){
   .container{
     width:100% !important;
