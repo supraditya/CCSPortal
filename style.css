@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@media only screen and (max-width: 700px) 
+@media only screen and (max-width: 880px) 
 {
-  .table-cell
+  table
   {
     display: none !important;
   }
@@ -24,23 +24,59 @@
   .Lheading
   {
     font-size: 24px !important;
-    margin-bottom: 10% !important;
+    
   }
+  #vector
+  {
+    display: none;
+  }
+  .phone_login
+  {
+    top: 10% !important;
+  }
+
 }
-@media only screen and (min-width: 700px)
+@media only screen and (min-width: 880px) and (max-width: 1290px)
 {
 	.phone_login
 	{
 		display: none;
 	}
+  #vector
+  {
+    display: none;
+  }
 	.container
 	{
-		top: 10% !important;
+		top: 71% !important;
 	}
 	#reglink
 	{
 		display: none;
 	}
+  #leftcell
+  {
+    display: none;
+  }
+  .Lheading
+  {
+    padding-bottom: 15%;
+    margin-bottom: 8%;
+  }
+}
+@media only screen and (min-width: 1290px)
+{
+  .phone_login
+  {
+    display: none;
+  }
+  .Lheading
+  {
+    margin-bottom: 0% !important;
+  }
+  table
+  {
+  }
 }
 @import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
 *.focus
@@ -48,7 +84,7 @@
   outline: 0;
 }
 body {
-  background-image: url('images/grid2.png');
+  /*background-image: url('images/grid2.png');*/
   position: absolute;
   left: 0;
   top: 0;
@@ -97,6 +133,11 @@ body {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+@media(min-width:1290px){
+  .container{
+    margin-top: -65px !important;
+  }
 }
 .container .box {
   position: absolute;
@@ -362,9 +403,10 @@ body {
 }
 .phone_login
 {
-	width: 300px;
+  position: relative;
+  z-index: 10;
+	width: 250px;
 	height: 320px;
-	top: 20% !important;
 	border-style: solid;
 	border-color: #FAA41A;
 	background-color: #333;
@@ -372,6 +414,7 @@ body {
   /* margin-left: 5%;
   margin-right: 5%; */
   margin: auto;
+  /*transform: translate(-1%,-25%);*/
 }
 a
 {
@@ -393,4 +436,25 @@ a
   margin-top: 40px;
   font-size: 23px;
 }
+}
+#vector
+{
+  height: 400px;
+  width: 550px;
+}
+table
+{
+  z-index: 1;
+  margin-top: 6%;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: 10%;
+  /*border-style: solid;
+  border-color: white;*/
+}
+#leftcell{
+  width:50%;
+}
+#rightcell{
+  width:50%;
 }
