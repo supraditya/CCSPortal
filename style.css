@@ -369,8 +369,9 @@ body {
 	border-color: #FAA41A;
 	background-color: #333;
 	border-radius: 24px;
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  margin: auto;
 }
 a
 {
@@ -380,4 +381,16 @@ a
 {
   margin-left: 5% !important;
   margin-right: 5% !important;
+}
+
+@media(max-width:650px){
+  .container{
+    width:100% !important;
+  }
+}
+@media(max-width:330px){
+  .Lheading{
+  margin-top: 40px;
+  font-size: 23px;
+}
 }
